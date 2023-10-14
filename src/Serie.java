@@ -11,7 +11,7 @@ public class Serie {
     private static final int NUMERO_TEMPORADAS_POR_DEFECTO = 3;
     private static final boolean ENTREGADO_POR_DEFECTO = false;
     
-    //Constructor
+    //Constructor por defecto
 	public Serie() {
 		this.titulo = "";
 		this.numeroTemporadas = NUMERO_TEMPORADAS_POR_DEFECTO;
@@ -19,7 +19,7 @@ public class Serie {
 		this.genero = "";
 		this.creador = "";
 	}
-	
+	//Constructor con titulo y creador por parametros los demas atributos por defecto.
 	public Serie(String titulo, String creador) {
 		this.titulo = titulo;
 		this.numeroTemporadas = NUMERO_TEMPORADAS_POR_DEFECTO;
@@ -27,7 +27,7 @@ public class Serie {
 		this.genero = "";
 		this.creador = creador;
 	}
-	
+	//Constructor con todos los atributos por parametro excepto entregado.
 	public Serie(String titulo,int numeroTemporadas, String genero, String creador) {
 		this.titulo = titulo;
 		this.numeroTemporadas = numeroTemporadas;

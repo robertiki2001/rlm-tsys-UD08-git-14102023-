@@ -2,21 +2,24 @@ import java.util.Random;
 
 public class Password 
 {
+	//Atributos
     private int longitud;
     private String contraseña;
-
+    
+    //Constructor por defecto
     public Password() 
     {
         this.longitud = 8;
         generarContraseña();
     }
-
+    
+   //Constructor para generar una contraseña aleatorio de con la longitud que nosotros queramos
     public Password(int longitud) 
     {
         this.longitud = longitud;
         generarContraseña();
     }
-
+    //Genera una contraseña con valores alfanumericos aleatorios
     private void generarContraseña() 
     {
         String caracteres = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
